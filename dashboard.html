@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+    <main>
+        <h2 class="font-bold text-3xl mt-6 ml-6">Dashboard</h2>
+        <h2 class="font-bold text-center md:text-5xl lg:text-5xl my-6">Lets <span  class="text-amber-700">Deposit</span> and  get <span class="text-amber-700">Money</span></h2>
+        <div class="grid lg:grid-cols-3 gap-3 mt-10 lg:mx-40">
+            <div class=" bg-amber-700 px-6 py-6 rounded">
+                <p class="text-3xl">Deposit</p>
+                <p  class="text-3xl">$<span id="deposit-total">00</span></p>
+            </div>
+            <div class=" bg-amber-700 px-6 py-6 rounded ">
+                <p class="text-3xl">Withdraw</p>
+                <p class="text-3xl">$<span id="withdraw-total">00</span></p>
+            </div>
+            <div class=" bg-amber-700 px-6 py-6 rounded">
+                <p class="text-3xl">Balance</p>
+                <p class="text-3xl">$<span id="balance">1500</span></p>
+            </div>   
+        </div>
+        <div class="grid lg:grid-cols-2 gap-3 mt-10 lg:mx-40">
+            <div class=" bg-amber-700 px-6 py-10 rounded ">
+                <p class="text-3xl mb-2">Please Deposit</p>
+                <input id="deposit-field" type="text" placeholder="$ Amount you want to deposit"
+                    class="input input-bordered input-secondary w-full max-w-xs" /> <br>
+                <button id="btn-Deposit" class=" mt-2 btn btn-outline btn-secondary">Deposit</button>
+            </div>
+            <div class=" bg-amber-700 px-6 py-10 rounded ">
+                <p class="text-3xl mb-2">Please Withdraw</p>
+                <input id="withdraw-field" type="text" placeholder="$ Amount you want to withdraw" class="input input-bordered input-secondary w-full max-w-xs" /> <br>
+                <button id="btn-Withdraw" class="mt-2 btn btn-outline btn-secondary">Withdraw</button>
+            </div>
+        </div>
+    </main>
+    <script src="Js/deposit.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank-Box</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <h2 class="font-bold text-center md:text-5xl lg:text-5xl my-6 text-amber-700">Making a Personal Banking System!!</h2>
+        <div class="hero  mt-10">
+                <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <form class="card-body">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Email</span>
+                            </label>
+                            <input id="user-email" type="email" placeholder="email" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Password</span>
+                            </label>
+                            <input id="user-password" type="password" placeholder="password" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control mt-6">
+                            <button id="clickButton" type="button" class="btn btn-outline btn-warning text-white text-xl">Login</button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+        <div class="mt-6 ml-20 py-10 px-15">
+            <h2>For Testing Purpose, you can use these Email amd password--- </h2>
+            <h2>Email: mrgalib40@gmail.com</h2>
+            <h2>password: 123</h2>
+        </div>
+    </main>
+    <script src="Js/bank.js"></script>
+</body>
+</html>
